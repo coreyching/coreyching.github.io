@@ -15,7 +15,8 @@
 }
 
 .jumbotron {
-    background: url('../assets/cover-wheel.png');
+    background-color: #111;
+    opacity: .7;
     height: 500px;
     max-width: 100%;
     -webkit-background-size: cover;
@@ -26,7 +27,6 @@
 
 .jumbotron .container {
   position: relative;
-  top:100px;
 }
 
 .jumbotron h1 {
@@ -70,7 +70,7 @@
 
 .thumbnail a > img {
     height: 270px;
-    width:  350px;
+    width:  100%;
 }
 
 #thermoostat-img {
