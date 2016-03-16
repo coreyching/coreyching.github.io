@@ -10,9 +10,18 @@
   display: inline;
 }
 
+.links {
+    margin-top: 8px;
+}
+
 .jumbotron {
-  background-image:url('../assets/cover-wheel.png');
-  height: 500px;
+    background: url('../assets/cover-wheel.png');
+    height: 500px;
+    max-width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .jumbotron .container {
