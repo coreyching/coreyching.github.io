@@ -3,10 +3,27 @@
 
   <head>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/main.css">
-    
+
+
+      <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+      <!-- Fonts -->
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+      <!--jQuery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+      <!-- Local -->
+      <link rel="stylesheet" href="styles/main.css">
+
   </head>
 
   <body>
@@ -15,6 +32,7 @@
         <ul class="pull-left">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#work">Work</a></li>
         </ul>
         <div class="pull-right links">
             <a href="http://www.linkedin.com/in/coreyching">Linkedin</a>
@@ -28,19 +46,16 @@
         </div>
       </div>
     </div>
-
     <div class="jumbotron">
-      <div class="container">
-        <h1>Corey Christopher Ching</h1>
-        <p>Contact Me:</p>
-       	<p>Cycching@ucdavis.edu</p>
-      </div>
-    </div> 
+        <div class="container">
+            <h1>Corey Christopher Ching</h1>
+            <p>Email: Cycching@ucdavis.edu</p>
+        </div>
+    </div>
     <div id="projects" class ="projects">
       <div class="container">
         <h2>Portfolio</h2>
-          <h3>Click on project for more information.
-          </h3>
+          <p>Click on a project for more information.</p>
           <div class="row">
             <div class ="col-md-4">
               <div class="thumbnail">
@@ -76,7 +91,60 @@
          </div>
       </div>
     </div>
-      
+    <div id="work" class="carousel slide" data-ride="carousel">
+        <div class="main-text hidden-xs">
+            <div class="col-md-12 text-center">
+                <h1>
+                    Previous Work Experience
+                </h1>
+            </div>
+        </div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#work" data-slide="next" class="active"></li>
+            <li data-target="#work" data-slide="next"></li>
+            <li data-target="#work" data-slide="next"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="http://www.nutanix.com">
+                    <img  src="assets/nutanix-prism-home.png" alt="nutanix-prism">
+                    <div class="carousel-caption">
+                        Nutanix
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="http://cenergi.ucdavis.edu">
+                    <img  src="assets/cenergi.png" alt="cenergi">
+                    <div class="carousel-caption">
+                        cEnergi
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="http://www.interact5170.org/previous-projects/#project_youth">
+                    <img src="assets/interact-5170.png" alt="interact">
+                    <div class="carousel-caption">
+                        Interact District 5170
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#work" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#work" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
 
 
     <!--<div class="learn-more">-->

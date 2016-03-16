@@ -1,3 +1,8 @@
+body {
+    position: relative;
+    overflow: auto;
+}
+
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -15,17 +20,18 @@
 }
 
 .jumbotron {
-    background-color: #111;
-    opacity: .7;
-    height: 500px;
+    background: url('http://goo.gl/04j7Nn');
     max-width: 100%;
+    margin-bottom: 0 !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 500px;
 }
 
 .jumbotron .container {
+  padding-top: 100px;
   position: relative;
 }
 
@@ -41,8 +47,11 @@
   color: #fff;
 }
 
-.learn-more {
-  background-color: #f7f7f7;
+.carousel-caption {
+    /*color: #00b0ff;*/
+    color: #fff;
+    font-family: 'Shift', sans-serif;
+    font-size: 18px;
 }
 
 .learn-more h3 {
@@ -73,6 +82,34 @@
     width:  100%;
 }
 
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+
 #thermoostat-img {
     height: 570px !important;
 }
+
+
