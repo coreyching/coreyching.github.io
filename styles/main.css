@@ -67,3 +67,12 @@
     font-size: 15px;
     margin-bottom: 13px;
 }
+
+.thumbnail a > img {
+    height: 270px;
+    width:  350px;
+}
+
+#thermoostat-img {
+    height: 570px !important;
+}
