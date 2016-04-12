@@ -84,8 +84,9 @@ body {
 
 .main-text
 {
+    padding-bottom: 20px;
     position: absolute;
-    top: 50px;
+    top: -11px;
     width: 96.66666666666666%;
     color: #FFF;
 }
