@@ -1,0 +1,13 @@
+{
+  "author": "Spotify",
+  "name": "web-api-auth-examples",
+  "description": "Basic examples of the Spotify authorization flows through OAuth 2",
+  "version": "0.0.1",
+  "dependencies": {
+    "@material/card": "^0.38.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "querystring": "~0.2.0",
+    "request": "^2.88.0"
+  }
+}

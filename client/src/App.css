@@ -1,0 +1,70 @@
+body {
+  background-color: #191414;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.login-button {
+  float: right;
+}
+
+
+div {
+  margin: 10px;
+}
+
+ul {
+ list-style-type: none; 
+}
+
+
+.track {
+  display: flex;
+  flex-direction: row;
+}
+
+.song-name {
+  margin-left: 0;
+}
+
+.play-button {
+  height: 20px;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.profile-photo {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.song-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ais-Hits > * {
+  -webkit-transition:0.2s;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
+  transition:0.2s;
+}
