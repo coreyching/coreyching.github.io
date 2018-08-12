@@ -8,13 +8,13 @@ Download the Spotify App and login using the credentials provided in the instruc
 
 Provided with the right dataset, users can experience a more powerful search experience for songs to play.
 
-#Feedback for Algolia
+### Feedback for Algolia
 
 Creating an account on Algolia was a smooth and clear experience. The documentation for ‘getting started’ and ‘indexing’ was well outlined. I enjoyed reading the'concepts' section explaining Algolia terminology, and one for tutorials to begin implementation. 
 I would like to see more props available from the Hits component of the react-instantsearch library.
 For example, built in animations such as fading in hit elements one by one when the results are loaded initially could be a nice effect.
 
-# What I Learned From This project
+### What I Learned From This project
 
 I learned how to consume the Algolia javascript SDK client, upload data into an index, and use the Algolia dashboard to set the desired relevance. As well, I learned how the Spotify API works, utilizing both playlist and music player endpoints. Together, I combined the two platforms together to build a partner integration. 
 
