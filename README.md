@@ -43,10 +43,11 @@ component that links the index 'Algolia Favorite Tracks'.
 ### 3)  Use the App
 - Make sure you have a song playing (or paused) on a Spotify app (Desktop or Mobile)
 	- (Donwload Spotify Player here: https://www.spotify.com/us/download/other/)
-- Visit http://localhost:3000
-- Click 'Log in with Spotify' and log in
+	- Login Credentials:
 	- Email: algoliacoreyching@gmail.com
 	- Password: AlgoliaRocks123
+- Visit http://localhost:3000
+- Click 'Log in with Spotify' and log in using same credentials.
 - Once logged in, your currently playing song's name and album art should appear
 - Use the search bar and type in 'paris'
 - See a subset of songs with the keyword paris displayed from the index dataset.
