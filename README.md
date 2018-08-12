@@ -2,7 +2,7 @@
 
 ### The Data
 
-Welcome to the Spotify Song Selector powered by Algolia! The data set is a list of song tracks with information such as: album name, artist name(s), song name, album release date, date song added to playlist, etc. The purpose of this application is to replicate a real partner integration with Algolia. I decided to build a Spotify app that uses Algolia as its search engine. Spotify can customize their search by changing the relevance through the Algolia Dashboard.
+Welcome to the Spotify Song Selector powered by Algolia! The data set is a list of song tracks with information such as: album name, artist name(s), song name, album release date, date song added to playlist, etc. The purpose of this application is to replicate a real partner integration with Algolia. My goal was to build an application that would mimic my experience on the job. I decided to build a Spotify app that uses Algolia as its search engine. Spotify can customize their search by changing the relevance through the Algolia Dashboard.
 
 Download the Spotify App and login using the credentials provided in the instructions below. Once you play a song you now have an active device. Using the Spotify Song Selector, you can search and choose a different song to play. 
 
