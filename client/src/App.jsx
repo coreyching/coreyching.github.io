@@ -60,13 +60,18 @@ class App extends Component {
        'Content-Type': 'application/x-www-form-urlencoded'
       })
     }).then((response) => {
-      response.json().then((responseData) => {
-        this.setState({
-          userInfo: responseData
-        }, () => {
-          setTimeout(this.getNowPlaying, 500);
+      if(response.ok) {
+        response.json().then((responseData) => {
+          this.setState({
+            userInfo: responseData
+          }, () => {
+            setTimeout(this.getNowPlaying, 500);
+          })
         })
-      })
+      } else {
+        console.log("here");
+        window.location = 'http://localhost:8888';
+      }
     })
   }
 
@@ -102,7 +107,7 @@ class App extends Component {
       return <div className="page-title">
         <div className="image-cropper">
           <img className="profile-photo" src={imagePath} /></div>
-        <div>Hello, { this.state.userInfo.display_name }</div>
+        <h1>Spotify Song Selector powered by Algolia</h1>
       </div>
     }
   }
@@ -137,12 +142,8 @@ class App extends Component {
           alt={props.hit.track.name} />
         <div className="song-content">
           <div className="song-title">
-            <div className="hit-name">
               <Highlight attribute="track.artists[0].name" hit={props.hit} /> - 
-            </div>
-            <div className="song-name">
               <Highlight attribute="track.name" hit={props.hit} />
-            </div>
           </div>
           <button
             className="play-button"
@@ -155,7 +156,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <a className="login-button" href='http://localhost:8888'> Login to Spotify </a>
+        <a className="login-button" href='http://localhost:8888'> Login </a>
         { this.displayTitle() }
         <div>
           Now Playing: { this.state.nowPlaying.name }
@@ -163,14 +164,20 @@ class App extends Component {
         <div>
           <img src={this.state.nowPlaying.albumArt} style={{ height: 150 }}/>
         </div>
-        <h3>{this.state.user}</h3>
-         <InstantSearch
-            indexName="Algolia Favorite Tracks"
-            searchClient={searchClient}
-          >
-            <SearchBox />
-            <Hits className="results" hitComponent={ this.Hit} />
-          </InstantSearch>
+        {
+          this.state.userInfo ? 
+            <div className="search-content">
+              <h3 className="playlist-title">Favorites Playlist</h3>
+              <InstantSearch
+                indexName="Algolia Favorite Tracks"
+                searchClient={searchClient}
+              >
+                <SearchBox />
+                <Hits className="results" hitComponent={ this.Hit } />
+              </InstantSearch>
+            </div>
+            : ''
+        }
       </div>
     );
   }

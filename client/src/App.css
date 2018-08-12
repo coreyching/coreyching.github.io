@@ -1,6 +1,6 @@
 body {
-  background-color: #191414;
-  color: #fff;
+ /* background-color: #191414;*/
+  color: black;
 }
 
 .App {
@@ -11,13 +11,17 @@ body {
   float: right;
 }
 
-
 div {
   margin: 10px;
 }
 
 ul {
  list-style-type: none; 
+}
+
+.playlist-title {
+  text-align: left;
+  padding-left: 20px;
 }
 
 
@@ -58,7 +62,7 @@ ul {
 
 .song-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -67,4 +71,8 @@ ul {
   -moz-transition:0.2s;
   -o-transition:0.2s;
   transition:0.2s;
+}
+
+.results {
+
 }
