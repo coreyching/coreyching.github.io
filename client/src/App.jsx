@@ -4,7 +4,7 @@ import './App.css';
 import SpotifyWebApi from 'spotify-web-api-js';
 import algSearch from 'algoliasearch';
 import { InstantSearch, SearchBox, Hits,
-  Highlight } from 'react-instantsearch-dom';
+  Highlight, Pagination } from 'react-instantsearch-dom';
 
 const spotifyApi = new SpotifyWebApi();
 const searchClient = algSearch('GDI1NF7NFT', '29ce5e7d8419d80e9422e65e61e05a5a');
@@ -174,6 +174,7 @@ class App extends Component {
               >
                 <SearchBox />
                 <Hits className="results" hitComponent={ this.Hit } />
+                <Pagination />
               </InstantSearch>
             </div>
             : ''
