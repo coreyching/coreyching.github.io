@@ -1,82 +1,82 @@
 
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
-<html> 
-<head> 
+<html>
+<head>
   <script>
-    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="kyAK9JjS67wsgQR7iR6d3wymBEFAJLWK";analytics.SNIPPET_VERSION="4.13.2";
-    analytics.load("kyAK9JjS67wsgQR7iR6d3wymBEFAJLWK");
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="h16aJamMgmfNEfPRutd1xNDHFF3pNp7q";analytics.SNIPPET_VERSION="4.13.2";
+    analytics.load("h16aJamMgmfNEfPRutd1xNDHFF3pNp7q");
     analytics.page();
     }}();
   </script>
-<title>Home Questionnaire<span id="selection-marker-1" class="redactor-selection-marker"></span></title> 
-</head> 
+<title>Home Questionnaire<span id="selection-marker-1" class="redactor-selection-marker"></span></title>
+</head>
 
-<body> 
-<h1>What is your favorite place to travel?</h1> 
-<p>I am building a directory of the sweetest travel destinations.</p> 
+<body>
+<h1>What is your favorite place to travel?</h1>
+<p>I am building a directory of the sweetest travel destinations.</p>
 
-<form name="travel" onsubmit="identify(event)"> What is your favorite travel destination? <input name="destination" required="" size="81" type="text"/> 
-<br><br><br> 
-Any recommendations (cool things to do, places to visit or restaurants to eat)? 
-<br><br> 
-<textarea cols="81" name="details" required="" rows="10"> </textarea> 
-<br><br> 
-Name: <input name="fullname" required="" size="75" type="text"/> 
-<br><br> 
-Email: <input name="email" required="" size="75" type="email"/> 
-<br><br> <input name="submit" type="submit" value="submit"/> </form> 
+<form name="travel" onsubmit="identify(event)"> What is your favorite travel destination? <input name="destination" required="" size="81" type="text"/>
+<br><br><br>
+Any recommendations (cool things to do, places to visit or restaurants to eat)?
+<br><br>
+<textarea cols="81" name="details" required="" rows="10"> </textarea>
+<br><br>
+Name: <input name="fullname" required="" size="75" type="text"/>
+<br><br>
+Email: <input name="email" required="" size="75" type="email"/>
+<br><br> <input name="submit" type="submit" value="submit"/> </form>
 
-<script type="text/javascript"> 
-  function identify(e){ 
+<script type="text/javascript">
+  function identify(e){
 
-    e.preventDefault(); 
-    var form = e.target; 
-    var email = form["email"].value; 
-    var fullname = form["fullname"].value; 
-    var destination = form["destination"].value; 
-    var details = form["details"].value; 
-    var user = { 
-      email: email, 
-      name: fullname, 
-      destination: 
-      destination, 
-      details: details 
-    }; 
+    e.preventDefault();
+    var form = e.target;
+    var email = form["email"].value;
+    var fullname = form["fullname"].value;
+    var destination = form["destination"].value;
+    var details = form["details"].value;
+    var user = {
+      email: email,
+      name: fullname,
+      destination:
+      destination,
+      details: details
+    };
     // Placeholder for an Identify call
-    analytics.identify('1234', { 
-      email: email, 
-      name: fullname 
-    }); 
+    analytics.identify('1234', {
+      email: email,
+      name: fullname
+    });
     // Placeholder for a Track call
-    analytics.track('destination submitted', user, function() { 
-      window.location.href = ""; 
+    analytics.track('destination submitted', user, function() {
+      window.location.href = "";
     });
 
     // // Ecommerce Events
-    analytics.track('Products Searched', { 
-     query: 'monopoly' 
+    analytics.track('Products Searched', {
+     query: 'monopoly'
     });
 
-    analytics.track('Product List Viewed', { 
-      list_id: 'hot_deals_1', 
-      category: 'Deals', 
-      products: [ { 
-        product_id: '507f1f77bcf86cd799439011', 
-        sku: '45790-32', 
-        name: 'Monopoly: 3rd Edition', 
-        price: 19, 
-        position: 1, 
-        category: 'Games', 
-        url: 'https://www.example.com/product/path', 
-        image_url: 'https://www.example.com/product/path.jpg' 
-      }, { 
-        product_id: '505bd76785ebb509fc183733', 
-        sku: '46493-32', 
-        name: 'Uno Card Game', 
-        price: 3, 
-        position: 2, 
-        category: 'Games' 
+    analytics.track('Product List Viewed', {
+      list_id: 'hot_deals_1',
+      category: 'Deals',
+      products: [ {
+        product_id: '507f1f77bcf86cd799439011',
+        sku: '45790-32',
+        name: 'Monopoly: 3rd Edition',
+        price: 19,
+        position: 1,
+        category: 'Games',
+        url: 'https://www.example.com/product/path',
+        image_url: 'https://www.example.com/product/path.jpg'
+      }, {
+        product_id: '505bd76785ebb509fc183733',
+        sku: '46493-32',
+        name: 'Uno Card Game',
+        price: 3,
+        position: 2,
+        category: 'Games'
     } ] });
 
     analytics.track('Product Viewed', {
@@ -139,7 +139,7 @@ Email: <input name="email" required="" size="75" type="email"/>
     });
   }
 
-</script> 
+</script>
 
-</body> 
+</body>
 </html>
